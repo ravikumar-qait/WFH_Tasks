@@ -30,7 +30,9 @@ def extract_text_from_pdf(pdf_path,page_count):
 text_format = ""
 
 if __name__ == '__main__':
-    text_format,page_count = extract_text_from_pdf('Enrollment_Form_filled.pdf',0)
+    file_input = input("Enter Name of pdf to convert: ")
+    file_input += '.pdf'
+    text_format,page_count = extract_text_from_pdf(file_input,0)
 
 
 my_dict = {}
