@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="13e76163-3a58-4946-8374-5c9c865cafe4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../OAuthClient/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../OAuthClient/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OAuthClient/src/main/java/com/oauth2/OAuthClient/config/OauthConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../OAuthClient/src/main/java/com/oauth2/OAuthClient/config/OauthConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OAuthClient/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../OAuthClient/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OAuthClient/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../OAuthClient/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OAuthClient/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../OAuthClient/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Readme.txt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1Zqi2Ca2PIdemTFBRn3MnL0EEnv" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../QuadTable" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="13e76163-3a58-4946-8374-5c9c865cafe4" name="Default Changelist" comment="" />
+      <created>1585572816088</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585572816088</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="499" y="114" key="FileChooserDialogImpl" timestamp="1585572831036">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="114" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1585572831036" />
+  </component>
+</project>
