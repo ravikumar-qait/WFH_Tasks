@@ -15,7 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from Library_Management.admin import myadmin
+from Library_Management import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('myadmin/', myadmin.urls),
+    path('',views.index,name='index'),
 ]
