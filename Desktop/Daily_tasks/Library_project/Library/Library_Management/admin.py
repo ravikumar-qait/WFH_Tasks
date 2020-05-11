@@ -11,8 +11,7 @@ admin.site.index_title = ""
 
 
 def stockout(modeladmin, request, queryset):
-    queryset.update(quantity = 0)
-    queryset.update(available= False)
+    queryset.update(quantity = 0,available=False)
 stockout.short_description = "Out of Stock"
 
 def available(modeladmin, request, queryset):
@@ -35,7 +34,7 @@ admin.site.register(books, booksdata)
 admin.site.register(authors)
 admin.site.register(genre)
 admin.site.unregister(Group)
-admin.site.unregister(User)
+admin.site.unregister(User) 
 
 #admin.site.unregister(Site)
 
