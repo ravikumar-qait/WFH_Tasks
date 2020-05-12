@@ -15,4 +15,5 @@ urlpatterns = [
     path('delete1_all/',views.delete1_all,name='delete1_all'),
     path('delete_all/',views.delete_all,name='delete_all'),
     path('complete_all/',views.complete_all,name='complete_all'),
+    path('restore_all',views.restore_all,name='restore_all'),
 ]

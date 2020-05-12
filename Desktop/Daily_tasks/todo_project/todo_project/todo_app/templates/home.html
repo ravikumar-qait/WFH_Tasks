@@ -20,20 +20,26 @@
         <tr class="table-secondary">
         <td><a  class="striker" href="{% url 'edit' things.id %}">{{things.item}}</a>  <br><sup><sup> Created at: {{things.created_time}}</sup>  </sup></td> 
         
-        <td> <a class="alert alert-danger"  href="{% url 'uncross' things.id %}"><sup>Mark as Uncompleted</sup> </a>  </td>
-        <td><a class="alert alert-danger" href="{% url 'delete' things.id %}">Delete</a></td>
+        <td width="10%"> <a class="alert alert-danger"  href="{% url 'uncross' things.id %}"><sup>Mark_Uncompleted</sup> </a>  </td>
+        <td width="10%"><a class="alert alert-danger" href="{% url 'delete' things.id %}">Delete</a></td>
         </tr>
         {% else %}
         <tr>
             <td><a href="{% url 'edit' things.id %}">{{things.item}}</a> <br>  <sup><sup> Created at: {{things.created_time}}</sup>  </sup></td> 
             
-            <td> <a class="alert alert-success" href="{% url 'cross' things.id %}"><sup>Mark as Completed</sup> </a></td>
-            <td ><a class="alert alert-danger" href="{% url 'delete' things.id %}">Delete</a></td>
+            <td width="10%" > <a class="alert alert-success" href="{% url 'cross' things.id %}"><sup>Mark_Completed</sup> </a></td>
+            <td width="10%" ><a class="alert alert-danger" href="{% url 'delete' things.id %}">Delete</a></td>
             </tr>
         {% endif %}
         {% endfor %}
     </table>
+    {% else %}
+
+    <h4 style="color: teal;" >List is Empty&#128515;&#128515;... Head over to <b>Add-to-List</b> section to add items &#128077;</h4>
+
     {% endif %}
+
+
 
     {% if all_items %}
      <button type="button" class="btn btn-danger"><a href="{% url 'delete_all' %}"> Delete All</a> </button>
@@ -41,4 +47,10 @@
 
     {% endif %}
 
+    
+
 {% endblock %}
+
+<div class="footer">
+    <p>Footer</p>
+  </div>

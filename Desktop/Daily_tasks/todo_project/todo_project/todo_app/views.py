@@ -36,14 +36,14 @@ def restore(request,list_id):
     p.save()
     item.delete()
     messages.success(request, 'Item Restored successfully')
-    return redirect('deleted')
+    return redirect('deleted1')
 
 ## deleted section delete view
 def delete1(request,list_id):
     item = Deleted.objects.get(pk=list_id)
     item.delete()
     messages.success(request, 'Item Deleted successfully')
-    return redirect('deleted')
+    return redirect('deleted1')
 
 def cross(request,list_id):
     item = List.objects.get(pk=list_id)
@@ -79,6 +79,10 @@ def edit(request,list_id):
 ## delete all for home section
 
 def delete_all(request):
+    all_items = List.objects.all()
+    for things in all_items:
+        p = Deleted(item = things.item,completed = things.completed)
+        p.save()
     List.objects.all().delete()
     messages.success(request, 'Items Deleted successfully')
     return redirect('home')
@@ -86,7 +90,7 @@ def delete_all(request):
 def delete1_all(request):
     Deleted.objects.all().delete()
     messages.success(request, 'Items Deleted successfully')
-    return redirect('home')
+    return redirect('deleted')
 
 def complete_all(request):
     all_items = List.objects.all()
@@ -97,3 +101,14 @@ def complete_all(request):
         print("world")
     messages.success(request,'All Tasks Completed')
     return redirect('home')
+
+
+def restore_all(request):
+    all_items = Deleted.objects.all()
+    for things in all_items:
+        p = List(item = things.item,completed = things.completed)
+        p.save()
+    Deleted.objects.all().delete()
+    messages.success(request,'All Items Restored Successfully')
+    return redirect('deleted')
+        

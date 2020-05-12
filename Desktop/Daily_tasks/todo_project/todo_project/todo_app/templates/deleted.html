@@ -18,22 +18,23 @@
     {% for things in all_items reversed %}
     {% if things.completed %}
     <tr class="table-secondary">
-    <td class="striker"><div style="color:#007bff;">{{things.item}}</div>
-      
+    <td ><div class="striker" style="color:#007bff;">{{things.item}}</div>
+      <br>
       <sup><sup>Deleted at: {{things.deleted_time}} </sup></sup>
     </td> 
-    <td> Uncompleted </td>
-    <td><a class="alert alert-success" href="{% url 'restore' things.id %}">Restore</a></td>
-    <td><a class="alert alert-danger" href="{% url 'delete1' things.id %}">Delete</a></td>
+    <td width="15%"> Uncompleted </td>
+    <td width="10%"><a class="alert alert-success"  href="{% url 'restore' things.id %}">Restore</a></td>
+    <td width="10%"><a class="alert alert-danger" href="{% url 'delete1' things.id %}">Delete</a></td>
     </tr>
     {% else %}
     <tr>
         <td><div style="color:#007bff;">{{things.item}}</div> 
+            <br>
         <sup><sup>Deleted at: {{things.deleted_time}} </sup></sup>   </td>
         
-        <td> Completed</td>
-        <td ><a class="alert alert-success" href="{% url 'restore' things.id %}">Restore</a></td>
-        <td ><a class="alert alert-danger" href="{% url 'delete1' things.id %}">Delete</a></td>
+        <td width="15%"> Completed</td>
+        <td width="10%"><a class="alert alert-success" href="{% url 'restore' things.id %}">Restore</a></td>
+        <td width="10%"><a  class="alert alert-danger" href="{% url 'delete1' things.id %}">Delete</a></td>
         </tr>
     {% endif %}
     {% endfor %}
@@ -42,12 +43,14 @@
 
 {% if all_items %}
 <button type="button" class="btn btn-danger"><a href="{% url 'delete1_all' %}"> Delete All</a> </button>
+<button type="button" class="btn btn-success"><a href="{% url 'restore_all' %}"> Restore All</a> </button>
+<br>
+<br>
+{% else %}
 
+<h4 style="color: teal;">No items in Deleted List &#128515;&#128515; </h4>
 {% endif %}
 
-
-    
-
-
-
 {% endblock %}
+
+<div></div>
